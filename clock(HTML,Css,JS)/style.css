@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0fd;
+    font-family: 'Courier New', Courier, monospace;
+}
+#clock{
+    /*set position*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    padding-top: 50px;
+    /*Font setting*/
+    font-size: 45px;
+    font-family: monospace;
+    /*Box setting*/
+    color: rgb(230, 200, 200);
+    width: 450px;
+    height: 150px;
+    background-color: rgb(111, 0, 255);
+    /*Border Setting*/
+    border: 2px solid rgb(233, 145, 13);
+};
+/*By Erfan-Scorpio*/
