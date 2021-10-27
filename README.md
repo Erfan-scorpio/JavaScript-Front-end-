@@ -1,2 +1,2 @@
-# simple-Front-end-Projects
+# mini projects
 
