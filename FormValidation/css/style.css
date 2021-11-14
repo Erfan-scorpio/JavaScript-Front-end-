@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'behdad';
+    src: url(Fonts/Behdad-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4f30da;
+    font-family: 'behdad';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'boxform boxform'
+    'boxform boxform'
+    ;
+    height: 100vh;
+}
+.container{
+    grid-area: boxform;
+    margin:auto;
+    width: 350px;
+    height: 550px;
+    background-color: #fefefe;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'hform hform'
+    'mform mform'
+    ;
+}
+.head{
+    grid-area: hform;
+    border-bottom: 1px solid rgb(224, 240, 240);
+    background-color: rgb(224, 240, 240);
+    color: #4f30da;
+    width: 100%;
+    height: 100%;
+}
+.head h1{
+    margin: 20px 35px;
+    font-size: 20px;
+}
+.form{
+    grid-area: mform;
+    margin: 10px auto;
+}
+.form-controll{
+    margin-top: 10px;
+}
+.form-controll label{ 
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.form-controll input{ 
+    display: block;
+    width: 280px;
+    height: 35px;
+    margin-top: 5px;
+    border: 2px solid rgb(224, 240, 240);
+    outline: none;
+    border-radius: 5px;
+    padding-right: 10px;
+    font-size: 17px;
+    transition: ease-in-out 0.3s all;
+}
+.form-controll input:focus{
+    border: 2px solid #4f30da;
+}
+.form-controll.err input{
+    border-color: #ff5350;
+}
+.form-controll.success input{
+    border-color: #66bb6a;
+}
+.form-controll small{
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    visibility: hidden;
+}
+.form-controll.err small{
+    visibility: visible;
+}
+#sbtn{
+    display: block;
+    width: 280px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'behdad';
+    background-color: #4f30da;
+    color: #fefefe;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-controll { 
+    display: block;
+}
